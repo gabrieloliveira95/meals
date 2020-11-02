@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:meals/screens/category_screen.dart';
 
 void main() => runApp(AppMeals());
 
@@ -8,28 +11,17 @@ class AppMeals extends StatelessWidget {
     return MaterialApp(
       title: 'Let`s Cook?',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Let`s Cook?"),
-      ),
-      body: Center(
-        child: Text("Init"),
-      ),
+          primarySwatch: Colors.pink,
+          accentColor: Colors.amber,
+          fontFamily: 'Raleway',
+          canvasColor: Color.fromRGBO(255, 254, 229, 1),
+          textTheme: ThemeData.light().textTheme.copyWith(
+                title: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'RobotoCondensed',
+                ),
+              )),
+      home: CategoryScreen(),
     );
   }
 }
