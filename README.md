@@ -1,16 +1,39 @@
 # meals
 
-A new Flutter project.
 
-## Getting Started
+### Meals App Focus:
 
-This project is a starting point for a Flutter application.
+- Navigation Routes
+- ListView with categories
+- GridView
+- Tab Screen Control
 
-A few resources to get you started if this is your first Flutter project:
+Itens:
+- /Components/Category-Item -> Generate Itens in GridView with each Category
+- /Components/Meal-Item -> Generate Itens in ListView with each Meal by Selected Category
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Data: 
+- /Data/Dummy -> Constant List with data
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Classes: 
+- /Models/Category -> Class with Category Attributes (Show in GridView)
+- /Models/Meal -> Class with  Meal Attributes (Show after Category selected)
+
+Screens:
+- /Screens/Category_screen -> (GridView with Category)
+- /Screens/Meals_screen -> (Show Meals with selected Category)
+- /Screens/Meals_detail -> (Show Meals detail)
+- /Screens/Favorite_screen -> (Filter selected Meals with favorite)
+- /Screens/Tab_Screen -> (Control Tab with (Category_screen) and (Favorite_screen) )
+
+Util:
+- /Utils/App_routes -> List Routes acessed by Main
+
+
+Path:
+-> TabScreen -> Category Screen -> Meals Screen -> Meal Detail
+       |
+       v
+ FavoriteScreen
+                    
+
