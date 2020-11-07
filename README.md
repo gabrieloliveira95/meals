@@ -11,6 +11,7 @@
 Itens:
 - /Components/Category-Item -> Generate Itens in GridView with each Category
 - /Components/Meal-Item -> Generate Itens in ListView with each Meal by Selected Category
+- /Components/Drawer ->  A simple Drawer in Category Screen
 
 Data: 
 - /Data/Dummy -> Constant List with data
@@ -25,6 +26,7 @@ Screens:
 - /Screens/Meals_detail -> (Show Meals detail)
 - /Screens/Favorite_screen -> (Filter selected Meals with favorite)
 - /Screens/Tab_Screen -> (Control Tab with (Category_screen) and (Favorite_screen) )
+- /Screens/Settings_Screen -> Posterior implementation
 
 Util:
 - /Utils/App_routes -> List Routes acessed by Main
