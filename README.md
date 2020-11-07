@@ -1,7 +1,7 @@
 # meals
 
 
-### Meals App Focus:
+## Meals App Focus:
 
 - Navigation Routes
 - ListView with categories
@@ -19,6 +19,7 @@ Data:
 Classes: 
 - /Models/Category -> Class with Category Attributes (Show in GridView)
 - /Models/Meal -> Class with  Meal Attributes (Show after Category selected)
+- /Models/Settings -> Class with Sttings Attributes (Show in Settings Screen)
 
 Screens:
 - /Screens/Category_screen -> (GridView with Category)
@@ -26,7 +27,7 @@ Screens:
 - /Screens/Meals_detail -> (Show Meals detail)
 - /Screens/Favorite_screen -> (Filter selected Meals with favorite)
 - /Screens/Tab_Screen -> (Control Tab with (Category_screen) and (Favorite_screen) )
-- /Screens/Settings_Screen -> Posterior implementation
+- /Screens/Settings_Screen -> (Show Switch with Settings configurations)
 
 Util:
 - /Utils/App_routes -> List Routes acessed by Main
